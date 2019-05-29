@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="MainHeader.h" />
     <ClInclude Include="ReplyDNSResult.h" />
+    <ClInclude Include="tempHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

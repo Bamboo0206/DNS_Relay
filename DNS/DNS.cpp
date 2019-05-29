@@ -123,7 +123,7 @@ struct node
 	string ip_, id_;
 	unsigned int IP_;
 	int type;
-}
+};
 vector<node> IP_ID;
 
 char localdns[] = "dnsrelay.txt";
@@ -310,6 +310,11 @@ ReqPool* request_pool = new ReqPool[MAX_REQ];//¶þÎ¬£¿£¿ £¿£¿£¿£¿£¿£¿£¿
 /////////////////////////////////////////////////////////////////////////// 
 int main()
 {
+	SYSTEMTIME sys;
+	GetLocalTime(&sys);
+	if (case_count == 1) printf("%4d/%02d/%02d %02d:%02d:%02d.%03d ÐÇÆÚ%1d\n", sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds, sys.wDayOfWeek);
+
+
 	int iResult = 0;
 	int thread_num = 0;
 	char buffer[1000];
